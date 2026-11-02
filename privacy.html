@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the app stores travel records, what it sends when you use online tools, and how to export or delete your data.">
+  <title>Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #fafbf6; --ink: #263d35; --accent: #244f42;
+      --panel: #edf0e5; --line: #dfe5d4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font: 1rem/1.85 -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      overflow-wrap: anywhere;
+    }
+    main { max-width: 44rem; margin: auto; padding: 3.5rem 1.25rem 2rem; }
+    h1, h2 { line-height: 1.4; color: var(--accent); }
+    h1 { font-size: 2.25rem; margin: 0 0 1.25rem; }
+    h2 { font-size: 1.25rem; margin: 2rem 0 .5rem; }
+    p { margin: .55rem 0; }
+    .intro { background: var(--panel); padding: 1rem 1.25rem; border-left: .25rem solid var(--accent); }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+    @media (prefers-color-scheme: dark) {
+      :root { --paper: #234b3e; --ink: #f3f7df; --accent: #d8e8a8; --panel: #345a48; --line: #45614e; }
+    }
+    @media print {
+      :root { --paper: white; --ink: black; --accent: black; --panel: white; --line: silver; }
+      main { max-width: none; padding: 0; }
+      h2 { break-after: avoid; }
+      p { orphans: 2; widows: 2; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="intro">The app stores all your records on your device, including trip plans, expenses, photos, and network test history. When you look up an exchange rate, run a speed test, or check a domain, your device connects to an external service.</p>
+    <section>
+      <h2>Where your records and photos are stored</h2>
+      <p>The app saves your itineraries, stops, expenses, travel cards, checklists, and journal entries on your device so you can view and edit them. You choose which places to mark as visited. The app does not automatically access your device’s location.</p>
+      <p>When you add a trip cover or a photo to a visit, you choose the image from your photo library. The app saves a copy on your device and does not automatically upload it. Canceling the selection leaves existing records unchanged.</p>
+    </section>
+    <section>
+      <h2>What your device sends when you use online tools</h2>
+      <p><strong>Exchange rates.</strong> To fetch a rate, the app sends the two currency codes to <a href="https://frankfurter.dev/">Frankfurter</a>. For a historical rate, it also sends the requested date. The app saves the rate and converts amounts on your device. It does not send expense amounts or notes.</p>
+      <p><strong>Speed tests.</strong> The Connect tab reads the network type reported by your device. When you start a test, a <a href="https://speed.cloudflare.com/about">Cloudflare test server</a> exchanges test data with your device for the duration of the test. A full test downloads about 5 MB and uploads about 1 MB. The upload contains test data only. The app saves the time, network type, speeds, and latency in your local test history.</p>
+      <p><strong>Domain checks.</strong> Your device sends the domain you enter to its DNS resolver, which looks up the domain’s network address. Your device then sends an HTTPS request to the site to check its response. The resolver receives the domain name, and the services your device connects to can see the IP address the request comes from.</p>
+    </section>
+    <section>
+      <h2>Exporting and sharing your records</h2>
+      <p>We do not share personal information from the travel records you keep on your device. If you choose to export from the Profile tab, the app creates a JSON file containing all your trips, including photos, as well as visits, favorites, and network test history kept across trips.</p>
+      <p>The app first saves the export on your device. To send a copy, choose a recipient in the system share sheet and send the file. Check what the file contains and who will receive it before sharing.</p>
+    </section>
+    <section>
+      <h2>Reviewing and deleting your records</h2>
+      <p>You can review and edit records in the relevant section of the app. Deleting a trip removes its plans, expenses, cards, checklists, and journal entries. Visits, favorites, and network test history are kept across trips. To remove a visit and its photos from the app, delete the visit. You can clear network test history separately in the Connect tab.</p>
+      <p>Deleting a record does not remove the original photo from your photo library or change earlier exports. Delete exported copies wherever you saved them. If you sent a copy to someone else, only the recipient can remove that copy from their storage.</p>
+    </section>
+    <section>
+      <h2>Age requirement</h2>
+      <p>You must be at least 18 years old to use this service. If you are under 18, you may not download, install, access, or use it.</p>
+    </section>
+    <footer>See also: <a href="terms.html">Terms of Use</a></footer>
+  </main>
+</body>
+</html>
